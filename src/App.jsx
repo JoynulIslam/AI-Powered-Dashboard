@@ -1,10 +1,18 @@
-import React from "react";
+/**
+ * App.jsx
+ * Root Component: Sets up routing and global toast provider.
+ */
+
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/layout/Layout";
 
 const App = () => {
   return (
-    <div>
-      <div className="text-red-600">App main</div>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
+    </>
   );
 };
 
